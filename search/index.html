@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- force the latest engine in IE (also applies inside iframes / intranet zone) -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+        <link rel="apple-touch-icon" href="../assets/favicon.png">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="search" type="application/opensearchdescription+xml" title="CubeExplorer" href="../OpenSearch.xml" />
+        <title>Search - CubeExplorer</title>
+        <!--
+            Google CSE - same mechanism as the original Old Bing site.
+            Replace cx= with your own Custom Search Engine ID to serve your own index.
+        -->
+        <script async src="https://cse.google.com/cse.js?cx=3707112f717034274"></script>
+    </head>
+    <body>
+        <div id="bgLayer"></div>
+
+        <div id="topbar">
+            <a id="backBtn" href="../index.html" title="Back to homepage" aria-label="Back"></a>
+            <div id="brandCol">
+                <a href="../index.html"><img id="bingLogo" src="../assets/logo.png" alt="CubeExplorer"></a>
+                <div id="searchRow">
+                    <form id="mainForm">
+                        <div id="searchBox">
+                            <input id="textBox" type="text" name="q" autocomplete="off">
+                            <button id="searchButton" type="submit" title="Search" aria-label="Search"></button>
+                        </div>
+                    </form>
+                    <nav id="verticals">
+                        <a class="mainLink active" id="web">Web</a>
+                        <a class="mainLink workingLink" id="img">Images</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultsArea">
+            <div class="gcse-searchresults-only" data-queryParameterName="q"></div>
+        </div>
+
+        <div id="footer">
+            <div id="footerItems">
+                <span class="secondaryText">&copy; 2026 CubeCore</span>
+            </div>
+        </div>
+
+        <script src="../scripts/search.js"></script>
+    </body>
+</html>
