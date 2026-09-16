@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- force the latest engine in IE (also applies inside iframes / intranet zone) -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CubeExplorer - iframe embed demo</title>
+        <!--
+            IFRAME EMBED DEMO
+            CubeExplorer never breaks out of a frame: every link (including the
+            search form) navigates the iframe itself, and CSE result links open
+            in new tabs. Recommended snippet:
+
+                <iframe src="https://YOUR-SITE/cubexplorer/index.html"
+                        style="width:100%;height:600px;border:none;"
+                        title="CubeExplorer"></iframe>
+
+            If you sandbox the frame, add allow-scripts allow-same-origin
+            allow-forms allow-popups so the search form and result links work.
+        -->
+        <style>
+                html, body { margin: 0; height: 100%; background-color: #333; }
+                iframe { display: block; width: 100%; height: 100%; border: none; }
+        </style>
+    </head>
+    <body>
+        <iframe src="./index.html" title="CubeExplorer"></iframe>
+    </body>
+</html>
