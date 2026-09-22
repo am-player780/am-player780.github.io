@@ -54,34 +54,7 @@ body {
         padding: 26px 24px 10px 26px;
 }
 
-#backBtn {
-        flex-grow: 0;
-        flex-shrink: 0;
-        display: -ms-flexbox;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 64px;
-        height: 64px;
-        margin: 6px 26px 0 0;
-        background-color: #fff;
-        box-shadow: 0 2px 10px rgba(0, 30, 60, 0.3);
-        text-decoration: none;
-        transition: transform 0.12s ease, box-shadow 0.12s ease;
-        font-family: "Segoe UI Symbol", "MDL2 Icons";
-}
 
-/* full Segoe UI Symbol button: U+E0D5 is the original Win8 back arrow -
-   the exact glyph WinJS .win-backbutton renders via
-   font-family: "Segoe UI Symbol"; content: "\E0D5".  Non-Windows systems
-   get the identical outline from the bundled "MDL2 Icons" webfont. */
-#backBtn::before {
-        content: "\E0D5";
-        font-family: "Segoe UI Symbol", "MDL2 Icons";
-        font-size: 32px;
-        line-height: 1;
-        color: #1a1a1a;
-}
 
 #brandCol {
         flex-grow: 0;
